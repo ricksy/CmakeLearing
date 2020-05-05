@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION "3.1")
+project("HAHA")
+add_executable(${PROJECT_NAME} main.cpp)
+include(CTest)
+add_test(test1 ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME})
+#add_test(test2 ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME} "6")
